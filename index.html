@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="flex h-screen justify-center items-center bg-[darkcyan]">
+      <div class="rounded-lg bg-white shadow-xl w-[400px] h-[600px] flex flex-col">
+        <div class="rounded-lg overflow-hidden p-2">
+            <img id="cover" src="./player/img/fourth-of-july.jpeg" alt="player img">
+        </div>
+        <div class=" ml-2">
+            <h4 id="name" class="text-[30px] font-semibold">Fourth of July</h4>
+            <p id="singer">Sufjan</p>
+        </div>
+        <audio id="song" src="./song/songs/fourth-of-july.mp3"></audio>
+        <div class="bg-[darkgray] w-[380px] h-1 rounded mt-5 ml-2">
+            <div id="progress-bar" class="bg-[red] h-full w-[0]"></div>
+        </div>
+        <div class="flex justify-between px-4 py-4 items-center mt-auto">
+            <button id="prev-btn" class="h-[60px] w-[60px] rounded-full bg-[darkcyan] text-[20px]">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="play-button" class="h-[80px] w-[80px] rounded-full bg-[darkcyan] text-[20px]">
+                <i id="playbtn-icon" class="fa-solid fa-play"></i>
+            </button>
+            <button id="next-btn" class="h-[60px] w-[60px] rounded-full bg-[darkcyan] text-[20px]">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+      </div>
+   </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script  src="main.js"></script>
+</html>
